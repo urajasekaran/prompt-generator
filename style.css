@@ -1,0 +1,160 @@
+/* Base styles for the AI Prompt Generator */
+/* Global base styles */
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+  background-color: #f7f9fb;
+  color: #333;
+}
+
+header {
+  background-color: #007acc;
+  color: #fff;
+  padding: 2rem 1rem;
+  text-align: center;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 2rem;
+}
+
+header p {
+  margin-top: 0.5rem;
+  font-size: 1rem;
+  font-weight: 300;
+}
+
+main {
+  max-width: 900px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+}
+
+/* Controls section */
+.controls {
+  background-color: #fff;
+  padding: 1.5rem;
+  border-radius: 6px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-bottom: 2rem;
+}
+
+.controls h2 {
+  margin-top: 0;
+  margin-bottom: 0.75rem;
+  font-size: 1.25rem;
+  color: #007acc;
+}
+
+textarea#needInput {
+  width: 100%;
+  padding: 0.6rem;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: vertical;
+  min-height: 70px;
+}
+
+/* Grid layout for selectors */
+.grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.field {
+  flex: 1 1 180px;
+  display: flex;
+  flex-direction: column;
+}
+
+.field label {
+  margin-bottom: 0.25rem;
+  font-size: 0.85rem;
+  color: #555;
+}
+
+.field select {
+  padding: 0.5rem;
+  font-size: 0.95rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+/* Buttons */
+.button-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin-top: 1.5rem;
+}
+
+button {
+  padding: 0.6rem 1rem;
+  font-size: 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+}
+
+button.primary {
+  background-color: #007acc;
+  color: #fff;
+  border: none;
+}
+
+button.primary:hover:not(:disabled) {
+  background-color: #005ea3;
+}
+
+button.secondary {
+  background-color: #f0f0f0;
+  color: #007acc;
+  border: 1px solid #cce0f7;
+}
+
+button.secondary:hover:not(:disabled) {
+  background-color: #e8f2fb;
+}
+
+button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+/* Result section */
+.result {
+  background-color: #fff;
+  padding: 1.5rem;
+  border-radius: 6px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-bottom: 1.5rem;
+}
+
+.result h3 {
+  margin: 0 0 1rem;
+  color: #007acc;
+}
+
+.result pre {
+  white-space: pre-wrap;
+  background-color: #f7f9fb;
+  padding: 1rem;
+  border-radius: 4px;
+  overflow-x: auto;
+  font-size: 0.95rem;
+  border: 1px solid #ececec;
+}
+
+footer {
+  text-align: center;
+  padding: 1rem 0;
+  background-color: #f0f0f0;
+  font-size: 0.9rem;
+  color: #555;
+}

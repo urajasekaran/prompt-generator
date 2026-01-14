@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AI Prompt Generator</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>AI Prompt Generator for Product Managers</h1>
+    <p>Describe your task and generate a tailored prompt in seconds.</p>
+  </header>
+
+  <main>
+    <!-- User need input and controls -->
+    <section class="controls">
+      <h2>Describe what you need</h2>
+      <textarea id="needInput" rows="3" placeholder="Example: Generate an OOO message for next week. I’m on leave, but urgent issues go to John. Keep it friendly and short."></textarea>
+
+      <div class="grid">
+        <div class="field">
+          <label for="tone">Tone</label>
+          <select id="tone">
+            <option value="professional">Professional</option>
+            <option value="friendly">Friendly</option>
+            <option value="direct">Direct</option>
+          </select>
+        </div>
+        <div class="field">
+          <label for="format">Format</label>
+          <select id="format">
+            <option value="email">Email</option>
+            <option value="slack">Slack/Teams</option>
+            <option value="doc">Doc/PRD</option>
+          </select>
+        </div>
+        <div class="field">
+          <label for="length">Length</label>
+          <select id="length">
+            <option value="short">Short</option>
+            <option value="medium" selected>Medium</option>
+            <option value="detailed">Detailed</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="button-row">
+        <button id="generateFromNeedBtn" class="primary">Generate from my need</button>
+        <button id="generateFromLibraryBtn" class="secondary">Pick from library</button>
+        <button id="copyBtn" class="secondary" disabled>Copy</button>
+      </div>
+    </section>
+
+    <!-- Result section -->
+    <section id="result" class="result" style="display:none;">
+      <h3 id="promptTitle"></h3>
+      <pre id="promptText"></pre>
+    </section>
+  </main>
+
+  <footer>
+    <p>Prompts inspired by industry resources and curated for educational use.</p>
+  </footer>
+
+  <!-- Load the application logic -->
+  <script src="script.js"></script>
+</body>
+</html>

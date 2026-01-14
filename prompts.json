@@ -1,0 +1,82 @@
+[
+  {
+    "title": "First-Principles Market Deconstruction — Paste-ready prompt",
+    "instruction": "Deconstruct the market for [Core Job-to-be-Done] from first principles. Produce: (A) a one‑page ecosystem map listing Key Players (names/types), Value Flows (who pays whom and why), and Economic Incentives for each actor; (B) the five highest‑friction nodes ranked by impact and why; (C) three sources of value leakage (how money or attention is lost today); (D) a recommended one‑sentence manifesto: our vision for a new solution and three tactical moves to get initial traction.",
+    "inputs": "[Core Job-to-be-Done], market/context (e.g., B2B SMBs, consumers)",
+    "output": "Ecosystem table + numbered list + 1‑sentence entry point",
+    "success_criteria": "Clear actors, measurable friction points and realistic next steps",
+    "follow_up": "Turn friction node #1 into a 90‑day experiment plan"
+  },
+  {
+    "title": "Non‑Consumption Segmentation — Who's left out?",
+    "instruction": "Identify who cannot consume existing solutions for [Job-to-be-Done]. Split the non‑consumers into segments by Skill (lack of ability), Access (geography/price/tech) and Time (speed). For each segment provide: a size estimate, aspiration (low/medium/high), behavioural profile, the top three barriers and an MVP idea that removes exactly one barrier.",
+    "inputs": "[Job-to-be-Done], market/context (e.g., B2B SMBs, consumers)",
+    "output": "Three‑row table (Skill/Access/Time) × columns: Size, Profile, Barriers, MVP",
+    "success_criteria": "Practical MVP ideas targeted to unlock large segments",
+    "follow_up": "Prioritise the three MVPs using ICE (Impact, Confidence, Ease — give scores)"
+  },
+  {
+    "title": "Value Chain Snapshot — Current vs digital‑first",
+    "instruction": "Map the current value chain delivering [Outcome] to [User Persona]. For each stage list: actor, cost driver, margin capture and inefficiency (time/cost/error). Then propose a digital‑first, six‑step simplified value chain and highlight which incumbents lose pricing power.",
+    "inputs": "[Outcome], [User Persona]",
+    "output": "Two tables: Current value chain; Proposed digital chain with delta notes",
+    "success_criteria": "Clear delta showing where value is captured today and how to shift it",
+    "follow_up": "Estimate the percentage margin reallocation if step 3 is automated"
+  },
+  {
+    "title": "Adjacent Market Threat Scan — three markets",
+    "instruction": "For [Market A], [Market B] and [Market C] identify dominant players, their key assets (data, distribution, tech) and evaluate (Low/Medium/High) the feasibility that they enter our space [Our Core Problem]. For each scenario analyse wedge and timing as well as time‑to‑entry (6/12/24 months).",
+    "inputs": "[Market A], [Market B], [Market C], [Our Core Problem]",
+    "output": "Three mini‑profiles with feasibility, wedge and timeline",
+    "success_criteria": "Actionable list of likely entrants and early‑warning signals to monitor",
+    "follow_up": "Recommend three defensive moves to blunt Market B’s wedge"
+  },
+  {
+    "title": "Regulatory Moat brainstorming (industry‑specific)",
+    "instruction": "List nuanced regulatory, compliance or standards‑based barriers in [Industry] beyond GDPR/HIPAA that could become moats. For each: name the rule or standard, explain the operational complexity (data residency, cross‑jurisdiction, certification cost) and propose a product feature or process that turns compliance into a customer acquisition advantage.",
+    "inputs": "[Industry]",
+    "output": "Table with columns: Regulation, Complexity, Opportunity, Acquisition leverage",
+    "success_criteria": "At least four defendable compliance moats with quick wins",
+    "follow_up": "Estimate initial cost and 12‑month timeline to implement your top pick"
+  },
+  {
+    "title": "Economic Model Stress Test — three scenarios",
+    "instruction": "Model unit economics for solving [Problem] under High‑volume low‑touch, Low‑volume high‑touch and Hybrid scenarios. For each scenario compute: Revenue per unit, Cost‑to‑serve (infrastructure, support), Contribution margin, Payback period, Customer acquisition cost (CAC) and breakeven usage rate. Use realistic variable drivers such as ARPU = [x], infrastructure per user = [y] and support per ticket = [z].",
+    "inputs": "[Problem], [ARPU], [infra per user], [support per ticket]",
+    "output": "Three scenario tables plus the top three sensitivity drivers per scenario",
+    "success_criteria": "Transparent assumptions and stress‑sensitivity curves",
+    "follow_up": "Draft a memo summarising which scenario to pursue"
+  },
+  {
+    "title": "Buyer economics: where value accrues today",
+    "instruction": "Produce a waterfall showing how a $100 buyer spend for [Outcome] gets distributed across ecosystem players today (percentages to vendor, platform, integrator, reseller, tax). Use assumptions or say 'assume' and list them.",
+    "inputs": "[Outcome], optional real price",
+    "output": "Waterfall table and assumptions list",
+    "success_criteria": "Clear visibility of value pockets to target",
+    "follow_up": "Propose redistribution if we introduce a direct‑to‑user model"
+  },
+  {
+    "title": "Friction heatmap — Identify top 7 frictions",
+    "instruction": "List the top seven friction points users face when achieving [Job-to-be-Done] for [Outcome]. For each friction provide: root cause, observed frequency (High/Medium/Low), business impact (dollars or time) and a one‑sentence mitigation idea.",
+    "inputs": "[Job-to-be-Done]",
+    "output": "Seven‑row friction heatmap",
+    "success_criteria": "Prioritised frictions by impact multiplied by frequency",
+    "follow_up": "Turn friction #1 into a measurable KPI and a six‑week experiment"
+  },
+  {
+    "title": "Non‑consumption persona one‑pager",
+    "instruction": "Create a one‑page persona for a non‑consumer segment called [Persona Name] who cannot use existing solutions. Include: demographics, goals, pains, tech access, daily workflow and a 30‑second elevator pitch for how our solution would help them.",
+    "inputs": "[Persona Name], short context",
+    "output": "Persona one‑pager (bullet format)",
+    "success_criteria": "Persona usable for recruitment and ideation",
+    "follow_up": "Write five interview questions to validate this persona’s needs"
+  },
+  {
+    "title": "Distribution & channel map",
+    "instruction": "Map existing distribution channels that deliver [Core Job-to-be-Done] – direct, reseller, marketplaces and partners. For each channel show: channel size, growth rate, margins and one activation tactic to penetrate or leverage.",
+    "inputs": "[Core Job-to-be-Done]",
+    "output": "Channel table plus four activation tactics",
+    "success_criteria": "Clear understanding of channel viability versus resource fit",
+    "follow_up": "Identify ‘channel‑channel’ strategies to multiply reach (e.g., bundling)"
+  }
+]
